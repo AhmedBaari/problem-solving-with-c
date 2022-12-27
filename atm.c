@@ -16,13 +16,15 @@ int main() {
 	while (a=1) {
 		printf("Enter your PIN: ");
 		scanf("%c", pin_entry);
+//comparing the entered pin and correct pin
 		if (pin_entry !== pin) {
 			printf("Incorrect PIN\n");
 			return false;
 		}
-		
+//getting the value of amount need to be withdraw		
 		printf("Enter amount: ");
 		scanf("%d", transaction_entry);
+//checking whether the amount is less than the balance
 		if (transaction_entry > balance) {
 			printf("You do not have enough balance\n");
 			return false;
